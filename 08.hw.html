@@ -20,6 +20,10 @@
       background-color: #0000002c;
     }
 
+    .bg-mydark {
+      background-color: #000;
+    }
+
     .carousel-inner {
       height: 45vh;
     }
@@ -28,6 +32,13 @@
       height: 45vh;
       object-fit: cover;
       object-position: 50% 65%;
+    }
+
+    .px img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
     }
 
     /* 大尺寸 */
@@ -43,10 +54,29 @@
         object-position: 50% 50%;
       }
 
-      .container-fluid {
+      #cards .container-fluid {
         height: 100vh;
         display: flex;
         flex-direction: column;
+      }
+
+      .card-deck {
+        width: 75%;
+      }
+
+      .px img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* 水平 垂直 */
+      }
+
+      #px2 .row {
+        flex-direction: row-reverse;
+      }
+
+      #footer {
+        width: 75%;
       }
     }
   </style>
@@ -111,10 +141,10 @@
   </div>
 
   <!-- 卡片區 -->
-  <div class="container-fluid bg-danger d-flex justify-content-center align-items-center px-5 py-5">
+  <div id="cards" class="container-fluid d-flex justify-content-center align-items-center px-5 py-5">
     <div class="card-deck">
       <div class="card">
-        <img src="https://picsum.photos/800/500/?random=1" class="card-img-top">
+        <img src="https://picsum.photos/600/400/?random=1" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Moon</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolor. Amet
@@ -124,7 +154,7 @@
       </div>
 
       <div class="card">
-        <img src="https://picsum.photos/800/500/?random=2" class="card-img-top">
+        <img src="https://picsum.photos/600/400/?random=2" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Sun</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, sed veritatis
@@ -134,7 +164,7 @@
       </div>
 
       <div class="card">
-        <img src="https://picsum.photos/800/500/?random=3" class="card-img-top">
+        <img src="https://picsum.photos/600/400/?random=3" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Light</h5>
           <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quas aliquam explicabo
@@ -145,6 +175,66 @@
 
     </div>
   </div>
+
+  <!-- 圖文區 -->
+  <div id="px1" class="px container-fluid d-flex">
+    <div class="row p-0">
+      <div class="col-lg-6 col-12 p-0">
+        <img src="https://picsum.photos/800/600/?random=1">
+      </div>
+      <div
+        class="col-lg-6 col-12 bg-light p-0 text-center d-flex justify-content-center align-items-center flex-column p-3">
+        <h1>Dancing for the World.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, mollitia! Ut earum fuga repudiandae
+          inventore voluptate rerum, porro qui nihil aliquam voluptates maxime quasi laudantium, ullam consequatur dicta
+          aspernatur corrupti.</p>
+        <button type="button" class="btn btn-success">Dance now!</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="px2" class="px container-fluid d-flex pb-5">
+    <div class="row p-0">
+      <div class="col-lg-6 col-12 p-0">
+        <img src="https://picsum.photos/800/600/?random=2">
+      </div>
+      <div
+        class="col-lg-6 col-12 bg-light p-0 text-center d-flex justify-content-center align-items-center flex-column p-3">
+        <h1>Cheers for the World.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, mollitia! Ut earum fuga repudiandae
+          inventore voluptate rerum, porro qui nihil aliquam voluptates maxime quasi laudantium, ullam consequatur dicta
+          aspernatur corrupti.</p>
+        <button type="button" class="btn btn-success">Cheer now!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container-fluid text-light bg-mydark d-flex justify-content-center align-items-center">
+    <div id="footer" class="my-3">
+      <div class="row">
+        <div class="col-lg-3 w-50">
+          <img src="https://picsum.photos/200/200/?random=1" class="rounded-circle">
+        </div>
+        <div class="col-lg-3 cl-6 pt-5 bg-info">
+          <h5>Adress</h5>
+          <p>1234 Streat<br>XXOO City</p>
+        </div>
+        <div class="col-lg-3 cl-6 pt-5">
+          <h5>Link</h5>
+          <p>LINE Blog<br>Careers<br>LINE Points</p>
+        </div>
+        <div class="col-lg-3 cl-6 pt-5">
+          <h5>Contacts</h5>
+          <p>E-mail：gdgrs332@gmail.comm<br>Phone：02-541354</p>
+        </div>
+        <div class="cl-12 w-100 text-center">© 2020 Alfred Dai Corporation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <script src="./js/jquery-3.5.1.min.js"></script>
   <script src="./js/popper.min.js"></script>
