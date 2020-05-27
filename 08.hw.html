@@ -75,8 +75,11 @@
         flex-direction: row-reverse;
       }
 
-      #footer {
-        width: 75%;
+      #footer .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
       }
     }
   </style>
@@ -210,28 +213,28 @@
   </div>
 
   <!-- footer -->
-  <div class="container-fluid text-light bg-mydark d-flex justify-content-center align-items-center">
-    <div id="footer" class="my-3">
-      <div class="row">
-        <div class="col-lg-3 w-50">
-          <img src="https://picsum.photos/200/200/?random=1" class="rounded-circle">
-        </div>
-        <div class="col-lg-3 cl-6 pt-5 bg-info">
-          <h5>Adress</h5>
-          <p>1234 Streat<br>XXOO City</p>
-        </div>
-        <div class="col-lg-3 cl-6 pt-5">
-          <h5>Link</h5>
-          <p>LINE Blog<br>Careers<br>LINE Points</p>
-        </div>
-        <div class="col-lg-3 cl-6 pt-5">
-          <h5>Contacts</h5>
-          <p>E-mail：gdgrs332@gmail.comm<br>Phone：02-541354</p>
-        </div>
-        <div class="cl-12 w-100 text-center">© 2020 Alfred Dai Corporation</p>
-        </div>
+  <div id="footer" class="container-fluid text-light bg-mydark d-flex justify-content-around align-items-center">
+    <!-- <div id="footer" class="my-3"> -->
+    <div class="row my-3">
+      <div class="col-lg-3 col-6 pt-3">
+        <img src="https://picsum.photos/200/200/?random=1" class="rounded-circle">
+      </div>
+      <div class="col-lg-3 col-6 pt-5 pl-5">
+        <h5>Adress</h5>
+        <p>1234 Streat<br>XXOO City</p>
+      </div>
+      <div class="col-lg-3 col-6 pt-5 pl-5">
+        <h5>Link</h5>
+        <p>LINE Blog<br>Careers<br>LINE Points</p>
+      </div>
+      <div class="col-lg-3 col-6 pt-5 pl-5">
+        <h5>Contacts</h5>
+        <p>E-mail：gdgrs332@gmail.comm<br>Phone：02-541354</p>
+      </div>
+      <div class="col-12 w-100 text-center">© 2020 Alfred Dai Corporation</p>
       </div>
     </div>
+    <!-- </div> -->
   </div>
 
 
